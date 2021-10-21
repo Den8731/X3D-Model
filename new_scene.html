@@ -12,19 +12,29 @@
             background-color: rgb(93, 91, 95)
         }
 
-        #fractal-image {
+        #nav-bar {
+            width: 100%;
+            padding: 15px 17px;
+            background-color: black;
             margin: 0;
-            border: indigo;
         }
 
-        #nav-bar {
+        #nav-bar a {
             margin: 0;
-            width: 100%;
             background-color: black;
             padding: 10px;
             font-size: 40px;
-            display: inline-block;
+            display: inline;
+            text-decoration: none;
 
+        }
+
+        #nav-bar a {
+            color: white;
+        }
+
+        #nav-bar :hover {
+            background-color: blueviolet;
         }
     </style>
 </head>
@@ -34,7 +44,7 @@
         <a href="#">Home Page </a>
         <a href="#">About Page</a>
     </div>
-    <x3d id='fractal-image' showStat='false' showLog='false' x='0px' y='0px' width='600px' height='600px'>
+    <x3d showStat='false' showLog='false' x='0px' y='0px' width='600px' height='600px'>
         <scene>
             <navigationInfo avatarSize='0.25 1.75 0.75' headlight='false' type='"EXAMINE" "ANY"'>
             </navigationInfo>
